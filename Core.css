@@ -76,6 +76,32 @@ Notes:      - Foundation by Cal Robert Lee's Nox Theme - https://www.calrobert.c
 /*---------------------------------- 
     #ALIAS LINKS
 ------------------------------------*/
+
+/* Main link coloring + hover */
+a {
+    color     : var(--external-link-color);
+    transition: color 0.3s ease;
+  }
+  
+  .rm-alias--block {
+    color          : var(--page-link-color);
+    transition     : color 0.3s ease;
+    text-decoration: underline dotted var(--references);
+    font-style     : italic;
+  }
+  
+  .rm-alias--page {
+    color     : var(--page-link-color);
+    transition: color 0.3s ease;
+    font-style: italic;
+  }
+  
+  .rm-alias--external {
+    color     : var(--external-link-color);
+    transition: color 0.3s ease;
+  }
+
+/* Old System 
 span [style*="background-color: rgb(235, 241, 245);"] {
     background-color: #00000000 !important;        
 }
@@ -85,9 +111,9 @@ span [style*="color: rgb(245, 86, 86);"] {
 span:hover [style*="color: rgb(245, 86, 86);"] {
     color: var(--alias-hover-color) !important;
 }
-span [style*="padding: 4px 6px;"] { /* alias padding to match body text */
+span [style*="padding: 4px 6px;"] {
     padding: 0px 0px !important;
-}
+} */
 
 /*---------------------------------- 
     #TAGS
@@ -157,6 +183,14 @@ span [style*="padding: 4px 6px;"] { /* alias padding to match body text */
 .block-border-left {
     border-left: var(--tree-vertline);
 }
+
+/*---------------------------------- 
+    #Cursor color 
+------------------------------------*/
+
+.roam-body .roam-app {
+    caret-color: var(--cursor) !important;
+  }
 
 /*---------------------------------- 
     #TODO 
@@ -287,7 +321,7 @@ span.cm-qualifier {
     cursor: pointer;
 }
 /*---------------------------------- 
-    #REFERENCES   
+    #REFERENCES   -- #change
 ------------------------------------*/
 .rm-reference-container .flex-h-box > div:nth-child(3) strong { /* "Linked/Unlinked References" reference block header */
     color: var(--reference-header-color);
@@ -310,12 +344,88 @@ span.cm-qualifier {
 /*---------------------------------- 
     #APP MAIN
 ------------------------------------*/
-body { /* main bg color */
+/*
+body {  main bg color 
     background-color: var(--body-bg);
+} */
+
+.roam-body-main,
+body {
+  background-color: var(--theme-white-1) !important;
 }
-.roam-log-container .roam-log-page { /* divider color in daily notes */
+
+/* Added - maybe break */
+.roam-body-main {
+    margin-top   : 45px;
+    border       : 1px solid var(--sidebar-background) !important;
+    border-radius: 2px !important;
+    background   : var(--background) !important;
+    margin-right : 6px !important;
+    margin-left  : 9px !important;
+  }
+
+  .rm-bullet__inner {
+    background-color: var(--bullets) !important;
+  }
+  
+  .rm-bullet--closed .rm-bullet__inner {
+    border: 4px solid var(--closed-bullets) !important;
+  }
+  
+  .rm-bullet__inner:hover {
+    background-color: var(--icons-hover) !important;
+  }
+  
+  .bp3-icon-standard,
+  .rm-caret {
+    color  : var(--links--hover) !important;
+    opacity: 1 !important;
+  }
+  
+  .rm-caret-hidden {
+    opacity: 0 !important;
+  }
+  
+  .rm-caret {
+    position: relative !important;
+    top     : -1.5px !important;
+  }
+  
+  .controls {
+    position: relative !important;
+    top     : 1px !important;
+  }
+  
+  .bp3-icon-standard:hover {
+    color: var(--icons-bg-hover) !important;
+  }
+  
+  .bp3-input,
+  .bp3-menu .bp3-icon-standard {
+    color: var(--body-bg) !important;
+  }
+  
+  .version-bullet {
+    background-color: var(--left-sidebar-bg) !important;
+    color           : var(--main-font-color) !important;
+  }
+  
+  .rm-block-input {
+    color           : var(--main-font-color) !important;
+    background-color: var(--left-sidebar-bg);
+    padding-left    : 6px;
+    border-radius   : 2px;
+  }
+
+
+/* 
+.roam-block > span > div {
+    background-color: inherit !important;
+  }
+
+.roam-log-container .roam-log-page {  divider color in daily notes 
     border-top: 1px solid var(--divider-color);
-}
+} */
 
 /*---------------------------------- 
     #APP WIDTH & PADDING    

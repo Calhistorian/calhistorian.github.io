@@ -12,7 +12,8 @@ Notes:      - To install visit: https://calhistorian.github.io/Calhistorian.css
     /* THEME COLORS */
     --theme-blue-1: #81C6F3;
     --theme-gray-1: #DCDEDD;
-    --theme-white-1: #1E2022; 
+    --theme-white-1: #1E2022;
+    --cursor:  #ff194c;
 
     /* PRIMARY FONTS */
     --main-font: 'Inter', sans-serif;
@@ -162,8 +163,8 @@ Notes:      - To install visit: https://calhistorian.github.io/Calhistorian.css
     --pages-mentions-font-color: var(--theme-white-1);
   
     --icon-color: #7d8386;
-    --icon-bg-hover: #dadfe61c;
-    --icon-color-hover: #dae0e4;
+    --icons-bg-hover: #dadfe61c;
+    --icons-color-hover: #dae0e4;
     --minirightbar-icon-color: #454d52;
     --pin-color: #ff6312;
   
