@@ -96,7 +96,7 @@ span [style*="padding: 4px 6px;"] { /* alias padding to match body text */
 /*---------------------------------- 
     #TAGS
 ------------------------------------*/
-  .rm-page-ref-tag {
+  .rm-page-ref--tag {
     color:  var(--tag-font-color )!important;
     font-weight: 400;
     background-color: var(--tag-bg-color);
@@ -105,7 +105,7 @@ span [style*="padding: 4px 6px;"] { /* alias padding to match body text */
     padding: var(--tag-padding);
     text-decoration: none;
   }
-  .rm-page-ref-tag:hover {
+  .rm-page-ref--tag:hover {
     color: var(--tagHover-font-color) !important;
     font-weight: 400;
     background-color: var(--tagHover-bg-color);
