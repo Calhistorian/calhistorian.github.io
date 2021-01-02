@@ -505,7 +505,7 @@ span.bp3-icon-small.bp3-icon-star {
     #Block embed and #Page embed
 ------------------------------------*/
 .rm-embed--page.rm-embed-container {
-    background-color: var(--kanban-column-background) !important;
+    background-color: var(--block-ref-hover-bg) !important;
     margin-left     : -16px !important;
     margin-right    : 2px !important;
     margin-bottom   : 0;
