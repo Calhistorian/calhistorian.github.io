@@ -129,9 +129,11 @@ span [style*="padding: 4px 6px;"] { /* alias padding to match body text */
 .block-highlight-yellow { /* block highlight */
     background-color: var(--block-highlight-bg);
 }
-.rm-embed-container { /* embed block highlight */
+
+/* embed block highlight 
+.rm-embed-container { 
     background-color: var(--embed-container-bg);
-}
+} */
 
 /*---------------------------------- 
     #BULLETS & NEST LINE
@@ -498,6 +500,84 @@ span.bp3-icon-small.bp3-icon-star {
 .rm-block-ref:hover {
     background-color: var(--block-ref-hover-bg);
 }
+
+/*---------------------------------- 
+    #Block embed and #Page embed
+------------------------------------*/
+.rm-embed--page.rm-embed-container {
+    background-color: var(--kanban-column-background) !important;
+    margin-left     : -16px !important;
+    margin-right    : 2px !important;
+    margin-bottom   : 0;
+    padding         : 10px 20px 10px 15px !important;
+    border-radius   : 5px;
+    box-shadow      : 0 0 2px 1px var(--references);
+  }
+  
+  .rm-embed--page.rm-embed-container::before {
+    content    : "Page Embed";
+    color      : var(--block-reference-text);
+    font-weight: 500 !important;
+  }
+  
+  .rm-embed__content .rm-reference-container {
+    border: none;
+  }
+  
+  .rm-embed__content .rm-reference-main {
+    border-color: var(--references);
+  }
+  
+  .rm-embed-margin-action {
+    background-color: var(--closed-bullets) !important;
+  }
+  
+  .rm-embed-margin-action.rm-not {
+    margin-left: -7px;
+  }
+  
+  .rm-embed-margin-action.rm-active {
+    margin-left: -7px;
+  }
+  
+  .rm-embed-container {
+    padding    : 0 !important;
+    margin-left: -20px !important;
+  }
+  
+  .rm-embed-container:hover > .rm-embed-edit {
+    right: 6px;
+  }
+  
+  .rm-embed-edit {
+    margin : 0 !important;
+    z-index: 1000;
+  }
+  
+  .rm-embed-inner-block-hide {
+    margin       : 2px 2px 2px 4px !important;
+    background   : var(--kanban-column-background) !important;
+    padding      : 3px 10px 3px 3px !important;
+    border-radius: 5px;
+    box-shadow   : 0 0 2px 1px var(--references);
+  }
+  
+  .rm-embed-inner-block-hide:before {
+    content     : "Block Embed";
+    color       : var(--block-reference-text);
+    padding-left: 8px !important;
+    font-weight : 500 !important;
+  }
+  
+  .rm-embed-inner-block-hide .roam-block-container.rm-not-focused.block-bullet-view {
+    margin-left: 6px;
+  }
+  
+  .rm-embed-container .rm-page__title {
+    color      : var(--page-heading) !important;
+    font-family: var(--header-font) !important;
+    padding-top: 5px !important;
+  }
 
 /*---------------------------------- 
     #DATEPICKER
