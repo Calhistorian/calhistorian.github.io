@@ -9,7 +9,12 @@ Notes:      - Foundation by Cal Robert Lee's Nox Theme - https://www.calrobert.c
 
 
 /*---------------------------------- 
-    #BASIC FONTS   
+    #FONTs, #TEXT, and COLORS
+------------------------------------*/
+
+
+/*---------------------------------- 
+    #BASIC FONTS   -- Old
 ------------------------------------*/
 .rm-title-textarea,
 .roam-body .roam-app h1.rm-title-display { /* page title */
@@ -34,7 +39,8 @@ Notes:      - Foundation by Cal Robert Lee's Nox Theme - https://www.calrobert.c
     font-family: var(--main-font);
     color: var(--header-color);
 }
-.rm-level3 { /* h3 */
+.rm-heading-level-3 > .rm-block__self .rm-block__input,
+.rm-level3  { /* h3 */
     font-weight: 500;
     font-size: 1.15em;
     font-family: var(--main-font);
@@ -46,7 +52,30 @@ Notes:      - Foundation by Cal Robert Lee's Nox Theme - https://www.calrobert.c
     font-family: var(--main-font);
     color: var(--main-font-color) !important;
 }
+
+/* Right sidebar h1 */
+.level2[style*="margin: 0px"] {
+    font-size: var(--sidebar-h1-size) !important;
+  }
   
+
+ /* Daily Page */
+ /* Page title & Daily date color */
+.level2,
+.rm-title-display {
+  color                  : var(--header-color) !important;
+  font-family            : var(--header-font) !important;
+  -webkit-font-smoothing : antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.roam-log-page .rm-title-display {
+  color: var(--daily-heading) !important;
+}
+
+.roam-log-page.roam-log-preview h1 {
+  color: var(--daily-heading) !important;
+}
 /*---------------------------------- 
     #LINKS
 ------------------------------------*/
@@ -417,6 +446,64 @@ body {
     border-radius   : 2px;
   }
 
+
+/* Block reference */
+
+.block-ref-count-button {
+    color        : var(--icon-color) !important;
+    background   : transparent !important;
+    border-bottom: 1.5px solid var(--theme-blue-1) !important;
+    z-index      : 1000 !important;
+    transition   : color 0.3s ease, border 0.3s ease !important;
+    opacity      : 1 !important;
+    font-family  : var(--header-font) !important;
+    margin-right : 6px;
+    margin-top   : 2px;
+    border-radius: 0;
+  }
+  
+  .block-ref-count-button:hover {
+    color        : var(--icons-color-hover) !important;
+    background   : transparent !important;
+    border-bottom: 1.5px solid var(--theme-blue-1) !important;
+    z-index      : 1000 !important;
+    transition   : color 0.3s ease, border 0.3s ease !important;
+  }
+  
+  .rm-block-ref,
+  .roam-block .rm-block-ref,
+  span[style*="color: red"] {
+    color             : var(--theme-gray-1) !important;
+    border-bottom     : none !important;
+    border-right-color: var(--theme-blue-1) !important;
+    border-right-width: 3px !important;
+    border-right-style: solid;
+    padding-right     : 2px !important;
+    border-left-color : var(--theme-white-1) !important;
+    border-left-width : 3px !important;
+    border-left-style : solid;
+    padding-left      : 2px !important;
+    border-radius     : 5px !important;
+    padding-top       : 2px !important;
+    padding-bottom    : 4px !important;
+  }
+  
+  .rm-block-ref:hover {
+    background-color: var(--kanban-column-background) !important;
+    transition      : color 0.3s ease;
+  }
+  
+  .bp3-icon.bp3-icon-filter[style*="color: rgb(168, 42, 42);"] {
+    color: var(--icon-color) !important;
+  }
+  
+  .bp3-input.bp3-minimal.search-input {
+    color: var(--theme-gray-1) !important;
+  }
+  
+  div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.5;"] {
+    opacity: 1 !important;
+  }
 
 /* 
 .roam-block > span > div {
