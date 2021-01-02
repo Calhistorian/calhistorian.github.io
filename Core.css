@@ -505,19 +505,19 @@ span.bp3-icon-small.bp3-icon-star {
     #Block embed and #Page embed
 ------------------------------------*/
 .rm-embed--page.rm-embed-container {
-    background-color: var(--block-ref-hover-bg) !important;
+    background-color: var(--page-embed-bg) !important;
     margin-left     : -16px !important;
     margin-right    : 2px !important;
     margin-bottom   : 0;
     padding         : 10px 20px 10px 15px !important;
     border-radius   : 5px;
-    box-shadow      : 0 0 2px 1px var(--references);
+    box-shadow      : 0 0 2px 1px var(--page-embed-bg);
   }
   
   .rm-embed--page.rm-embed-container::before {
     content    : "Page Embed";
-    color      : var(--block-reference-text);
-    font-weight: 500 !important;
+    color      : var(--theme-blue-1);
+    font-weight: 600 !important;
   }
   
   .rm-embed__content .rm-reference-container {

@@ -143,9 +143,11 @@ Notes:      - To install visit: https://calhistorian.github.io/Calhistorian.css
     --search-selected-row: #2c2d30;
   
     --block-ref-bg: none;
+    --block-embed-bg: #353a40;
     --block-ref-hover: none;
     --block-ref-hover-bg: #353a40;
     --block-ref-border-bottom: #393d42;
+    --page-embed-bg: #353a40;
   
     /*--pages-row-highlight: ;*/
     --pages-header-row: var(--theme-white-1);
