@@ -525,11 +525,11 @@ span.bp3-icon-small.bp3-icon-star {
   }
   
   .rm-embed__content .rm-reference-main {
-    border-color: var(--references);
+    border-color: var(--page-embed-border);
   }
   
   .rm-embed-margin-action {
-    background-color: var(--closed-bullets) !important;
+    background-color: var(--theme-blue-1) !important;
   }
   
   .rm-embed-margin-action.rm-not {
