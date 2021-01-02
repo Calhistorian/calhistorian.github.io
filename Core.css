@@ -514,67 +514,67 @@ span.bp3-icon-small.bp3-icon-star {
     box-shadow      : 0 0 2px 1px var(--page-embed-bg);
   }
   
-  .rm-embed--page.rm-embed-container::before {
+.rm-embed--page.rm-embed-container::before {
     content    : "Page Embed";
     color      : var(--theme-blue-1);
     font-weight: 600 !important;
   }
   
-  .rm-embed__content .rm-reference-container {
+.rm-embed__content .rm-reference-container {
     border: none;
   }
   
-  .rm-embed__content .rm-reference-main {
+.rm-embed__content .rm-reference-main {
     border-color: var(--page-embed-border);
   }
   
-  .rm-embed-margin-action {
+.rm-embed-margin-action {
     background-color: var(--theme-blue-1) !important;
   }
   
-  .rm-embed-margin-action.rm-not {
+.rm-embed-margin-action.rm-not {
     margin-left: -7px;
   }
   
-  .rm-embed-margin-action.rm-active {
+.rm-embed-margin-action.rm-active {
     margin-left: -7px;
   }
   
-  .rm-embed-container {
+.rm-embed-container {
     padding    : 0 !important;
     margin-left: -20px !important;
   }
   
-  .rm-embed-container:hover > .rm-embed-edit {
+.rm-embed-container:hover > .rm-embed-edit {
     right: 6px;
   }
   
-  .rm-embed-edit {
+.rm-embed-edit {
     margin : 0 !important;
     z-index: 1000;
   }
   
-  .rm-embed-inner-block-hide {
+.rm-embed-inner-block-hide {
     margin       : 2px 2px 2px 4px !important;
-    background   : var(--kanban-column-background) !important;
+    background   : var(--kanban-column-bg) !important;
     padding      : 3px 10px 3px 3px !important;
     border-radius: 5px;
     box-shadow   : 0 0 2px 1px var(--references);
   }
   
-  .rm-embed-inner-block-hide:before {
+.rm-embed-inner-block-hide:before {
     content     : "Block Embed";
-    color       : var(--block-reference-text);
+    color       : var(--theme-blue-1);
     padding-left: 8px !important;
-    font-weight : 500 !important;
+    font-weight : 600 !important;
   }
   
-  .rm-embed-inner-block-hide .roam-block-container.rm-not-focused.block-bullet-view {
+.rm-embed-inner-block-hide .roam-block-container.rm-not-focused.block-bullet-view {
     margin-left: 6px;
   }
   
-  .rm-embed-container .rm-page__title {
-    color      : var(--page-heading) !important;
+.rm-embed-container .rm-page__title {
+    color      : var(--header-color) !important;
     font-family: var(--header-font) !important;
     padding-top: 5px !important;
   }
