@@ -501,6 +501,8 @@ span.bp3-icon-small.bp3-icon-star {
     background-color: var(--block-ref-hover-bg);
 }
 
+
+
 /*---------------------------------- 
     #Block embed and #Page embed
 ------------------------------------*/
@@ -577,6 +579,37 @@ span.bp3-icon-small.bp3-icon-star {
     color      : var(--header-color) !important;
     font-family: var(--header-font) !important;
     padding-top: 5px !important;
+  }
+  
+/* Inline Block References */
+
+.rm-inline-references {
+    background-color: transparent !important;
+    border          : transparent !important;
+    box-shadow      : 0 0 3px 1px var(--block-embed-shadow);
+    border-radius   : 5px;
+    padding-top     : 5px;
+    padding-bottom  : 5px;
+    padding-right   : 20px;
+  }
+  
+  .rm-inline-references:before {
+    color      : var(--block-reference-text);
+    content    : "Block References";
+    font-weight: 500 !important;
+  }
+  
+  .rm-block-ref.dont-focus-block {
+    color: var(--block-reference-text);
+  }
+  
+  .rm-zoom-mask {
+    color: var(--page-links);
+  }
+  
+  .rm-zoom-item-content.rm-zoom-collapsed-item {
+    color          : var(--references);
+    text-decoration: underline;
   }
 
 /*---------------------------------- 
