@@ -595,8 +595,7 @@ a:hover {
 .rm-embed-container .rm-page__title {
   color      : var(--page-heading) !important;
   font-family: var(--header-font) !important;
-  padding-top: 5px;
-  !important;
+  padding-top: 5px !important;
 }
 
 /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L || CMD+C CMD+L */
@@ -787,8 +786,6 @@ g circle {
 }
 
 /* Kanban Card Styling */
-
-,
 .kanban-column-container {
   background-color: var(--kanban-main-background);
   max-width       : 91%;
