@@ -1,0 +1,33 @@
+.blockmap {
+display: flex;
+align-items: center;
+flex-direction: row;
+flex-flow: row wrap;
+align-items: baseline; /* allows Axlen's path finder to not go "up" */
+justify-content: baseline;
+
+}
+
+.blockmap > .rm-block__self {
+width: 200px;
+
+}
+.blockmap .rm-block__children .rm-block__controls {
+opacity: 0;
+}
+.blockmap:hover .rm-block__children .rm-block__controls {
+opacity: 1;
+}
+
+.blockmap > .rm-block__children {
+flex-grow: .5;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 10px;
+border-radius: 25px;
+border-top: 1px solid #03A9F4;
+border-bottom: 1px solid #03A9F4;
+border-left: 1px solid #03A9F4;
+border-right: 1px solid #03A9F4;
+background-color: #03A9F405;
+}]
