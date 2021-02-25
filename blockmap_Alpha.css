@@ -3,7 +3,7 @@ display: flex;
 align-items: center;
 flex-direction: row;
 flex-flow: row wrap;
-align-items: baseline; /* allows Axlen's path finder to not go "up" */
+align-items: baseline; /* allows Axlen's path finder to not go "up" - if you change this the children blocks can go above the parent on the y-axis */
 justify-content: baseline;
 
 }
