@@ -1,3 +1,10 @@
+
+/* This is necessary to be able to scroll to the right as your blockmap gets bigger */
+.roam-body-main > div  {
+  overflow-x: scroll !important;
+}
+
+/* Sets the direction rightward */
 .blockmap {
 display: flex;
 align-items: center;
@@ -8,10 +15,13 @@ justify-content: baseline;
 
 }
 
+/* Block width */
 .blockmap > .rm-block__self {
 width: 200px;
 
 }
+
+/* Hide controls until hover */
 .blockmap .rm-block__children .rm-block__controls {
 opacity: 0;
 }
@@ -19,6 +29,7 @@ opacity: 0;
 opacity: 1;
 }
 
+/ * styling and behavior of children blocks */
 .blockmap > .rm-block__children {
 flex-grow: .5;
 margin-top: 10px;
@@ -30,4 +41,4 @@ border-bottom: 1px solid #03A9F4;
 border-left: 1px solid #03A9F4;
 border-right: 1px solid #03A9F4;
 background-color: #03A9F405;
-}]
+}
